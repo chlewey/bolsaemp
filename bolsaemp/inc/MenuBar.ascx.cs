@@ -5,7 +5,7 @@ using System.Web.UI;
 
 namespace bolsaemp
 {
-	public partial class Plantilla : System.Web.UI.MasterPage
+	public partial class MenuBar : System.Web.UI.UserControl
 	{
 	}
 }

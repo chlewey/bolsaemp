@@ -11,10 +11,6 @@
 namespace bolsaemp {
 	
 	
-	public partial class Default {
-		
-		protected System.Web.UI.WebControls.Content Content1;
-		
-		protected System.Web.UI.WebControls.Button button1;
+	public partial class Footer {
 	}
 }

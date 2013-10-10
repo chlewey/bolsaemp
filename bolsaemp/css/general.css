@@ -1,0 +1,101 @@
+/*
+ * General behavior of elements
+ */
+*{margin:0;padding:0}
+body{font-family:Verdana, Arial, Helvetica, sans-serif;font-size: 12px;background:white}
+:link,:visited{color:inherit;text-decoration:none}
+:link:hover,:visited:hover{text-decoration:underline}
+ul{list-style-type:none}
+input[type=text]{width:12em}
+/*
+ * Main layout
+ */
+#header{position:relative;margin:12px auto 0;width:970px;height:140px}
+	#logo{display:block;padding:15px 0 0 20px;float: left}
+		#logo a{display:block;width:246px;height:82px}
+	#FormBusqueda{position:relative;float:right;height:50px;margin:18px 30px 0 0;width:364px}
+		#FormBusqueda label{}
+		#FormBusqueda input{padding:1px 0}
+		#FormBusqueda select{}
+	#titulo{clear:right;padding:20px 22px 0 0}
+#body{position:relative;margin:0 auto;width:970px;height;auto}
+	#main{width:960px;margin:0 5px}
+		#top{}
+			ul.MenuBarHorizontal{width:961px;height:35px}
+			ul.MenuBarHorizontal:hover{z-index:1000}
+				ul.MenuBarHorizontal li{position:relative;float:left}
+					ul.MenuBarHorizontal ul{z-index:1020;width:100px;position:absolute;left:-2000px}
+					ul.MenuBarHorizontal li:hover>ul{left:auto}
+						ul.MenuBarHorizontal ul li{width:150px}
+							ul.MenuBarHorizontal ul ul{position:absolute;margin:10px 0 0 1px}
+							ul.MenuBarHorizontal ul li:hover>ul{left:150px;top:0}
+				ul.MenuBarHorizontal a{display:block;padding:9px 9px 8px}
+						.anchoPos{width:300px}
+			#banner{width:960px;height:150px;position:relative}
+				#banner_texto{position:absolute;bottom:0;left:0;right:0;height:46px}
+					#banner_title{position:absolute;top:5px;left:10px}
+					#banner_texto .lang{float:right;margin:10px 25px 0 0;}
+		#left{float:left;padding:20px 5px 5px;width:210px}
+			ul.SideMenu{}
+				ul.SideMenu li{}
+					ul.SideMenu a{display:block;padding: 4px 6px 4px 10px}
+					ul.SideMenu ul{}
+						ul.SideMenu ul a{padding-left:30px}
+		#right{float:right;padding:20px 5px 5px 0;width:735px}
+	#main:after{content:' ';display:block;clear:both;height:0}
+#footer{position:relative;margin:0 auto;width:970px;height:25px}
+/*
+ * Element styling
+ */
+#header{background:transparent url('/images/cabezote.jpg') no-repeat center top}
+	#logo{}
+		#logo a{background:transparent url('/images/tiara.gif') no-repeat center top;font-size:0;text-indent:-999em}
+	#FormBusqueda{text-align:right}
+		#FormBusqueda label{color:white;font-size:10px;font-weight:bold}
+		#FormBusqueda input{font-size:12px;font-weight:normal}
+		#FormBusqueda select{font-size: 12px;font-weight: normal}
+	#titulo{text-align:right;color:white;font-size:25px;font-weight:normal}
+#body{background:transparent url('/images/fondo_menuprin.jpg') repeat-y center center}
+	#main{background:#94b3c5 url('/images/fondo_vertical.jpg') repeat-x center 150px}
+		#top{}
+			ul.MenuBarHorizontal{font-size:10pt;background-color:#2b5b81;text-align:right;vertical-align:middle}
+				ul.MenuBarHorizontal li{text-align:center;cursor:pointer}
+					ul.MenuBarHorizontal ul{font-size:10px;cursor:default}
+					ul.MenuBarHorizontal a{cursor:pointer;background-color:#2b5b81;color:white;text-align:left;vertical-align:middle}
+					ul.MenuBarHorizontal a:hover{text-decoration:none!important}
+					ul.MenuBarHorizontal a:hover,ul.MenuBarHorizontal a:focus{color:white}
+					ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible{color:#94b3c5}
+						ul.MenuBarHorizontal ul a.MenuBarItemSubmenu{background:transparent url('/images/SpryMenuBarRight.gif') no-repeat 95% 50%}
+						ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover{background:transparent url('(images/SpryMenuBarRightHover.gif') no-repeat 95% 50%}
+			#banner{background:transparent url('/images/banner/fac_ing.jpg') no-repeat center center}
+				#banner_texto{color:white;background-color:rgba(45,91,129,.7)}
+					#banner_title{font-weight:normal}
+		#left{}
+			ul.SideMenu{color:#aca991;font-weight:bold}
+				ul.SideMenu a{color:#22435d}
+					ul.SideMenu ul a{color:#3b7bae}
+		#right{}
+#footer{background:transparent url('/images/footer_fac.jpg') no-repeat center bottom;font-size:9px;color:white;line-height:20px;text-align:center;vertical-align:middel}
+
+/*******************************************************************************
+
+ BROWSER HACKS: the hacks below should not be changed unless you are an expert
+
+ *******************************************************************************/
+
+/* HACK FOR IE: to make sure the sub menus show above form controls, we underlay each submenu with an iframe */
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+		display: inline;
+		f\loat: left;
+		background: #FFF;
+	}
+}

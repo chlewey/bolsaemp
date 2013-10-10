@@ -13,7 +13,7 @@ using System.Web.UI;
 
 namespace bolsaemp
 {
-	public partial class Plantilla
+	public partial class Banner
 	{
 	}
 }
