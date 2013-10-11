@@ -105,7 +105,6 @@
   </ProjectExtensions>
   <ItemGroup>
     <None Include="bolsaemp.csproj" />
-    <None Include="bin\bolsaemp.dll" />
-    <None Include="bin\bolsaemp.dll.mdb" />
+    <None Include="banners.xml" />
   </ItemGroup>
 </Project>

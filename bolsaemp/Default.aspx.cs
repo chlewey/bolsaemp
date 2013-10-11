@@ -10,7 +10,27 @@ namespace bolsaemp
 		
 		public virtual void button1Clicked (object sender, EventArgs args)
 		{
-			button1.Text = "You clicked me";
+			//button1.Text = "You clicked me";
+		}
+
+		public virtual void submitClicked (object sender, EventArgs args)
+		{
+		}
+
+		public virtual void image1Clicked (object sender, EventArgs args)
+		{
+		}
+
+		public virtual void image2Clicked (object sender, EventArgs args)
+		{
+		}
+
+		public virtual void image3Clicked (object sender, EventArgs args)
+		{
+		}
+
+		public virtual void image4Clicked (object sender, EventArgs args)
+		{
 		}
 	}
 }

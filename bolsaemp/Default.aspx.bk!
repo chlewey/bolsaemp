@@ -1,0 +1,84 @@
+<%@ Page Language="C#" MasterPageFile="~/javeriana.master" Inherits="bolsaemp.Default" Title="Bolsa de empleos" %>
+<!--asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server"-->
+<h1>Bolsa de Empleo</h1>
+		<P align="center">
+			<TABLE id="Table1" height="75" cellSpacing="1" cellPadding="1" width="752" border="0">
+				<TR>
+					<TD width="352">
+						<P align="center"><strong>EMPLEADORES:</strong></P>
+					</TD>
+					<TD>
+						<P align="center"><STRONG>PROFESIONALES:</STRONG></P>
+					</TD>
+				</TR>
+				<TR>
+					<TD width="352">
+						<P align="center">&nbsp;</P>
+						<P align="center">Contacte Profesionales Javerianos.</P>
+						<UL>
+							<LI>
+								Nuestro <STRONG>servicio gratuito</STRONG> lo conecta con profesionales de más 
+								de 35 diferentes áreas laborales.</LI></UL>
+						<form>
+							<P align="center"><INPUT id="Button1" onclick="CreateWindow1()" type="button" value="Publique una oferta de empleo"
+									name="oferta"></P>
+						</form>
+						<br>
+					</TD>
+					<TD>
+						<FORM id="Form1" action="inicio.asp" method="post">
+							<INPUT TYPE=hidden NAME="origen" VALUE="0" ID="Hidden1">
+							&nbsp;
+							
+							<P align="center">Ingrese a sus sesión para revisar y aplicar a ofertas laborales.</P>
+							<CENTER>
+								<TABLE cellSpacing="2" cellPadding="2" border="0">
+									<TR>
+										<TD>
+											<P>Documento:</P>
+										</TD>
+										<TD>
+											<P><INPUT maxLength="12" size="12" name="documento"></P>
+										</TD>
+									</TR>
+									<TR>
+										<TD>
+											<P>Contraseña:</P>
+										</TD>
+										<TD>
+											<P><INPUT type="password" maxLength="12" size="12" name="password"></P>
+										</TD>
+									</TR>
+									<TR>
+										<TD colSpan="2">
+											<DIV align="center">
+												<P><INPUT type="submit" value="Ingresar" name="enviar"></P>
+											</DIV>
+										</TD>
+									</TR>
+								</TABLE>
+							</CENTER>
+						</FORM>
+						<UL>
+							<LI>
+							¿Problemas para ingresar? Haga clic <a href = "" onclick = "CreateWindow6()">aquí</a>.
+							</li>
+							<LI>
+								¿Primera vez? <a href = "" onclick = "CreateWindow6()">Regístrese</a>.
+							</LI>
+						</UL>
+					</TD>
+				</TR>
+			</TABLE>
+		</P>
+		<P align="center"><INPUT id="Image1" onclick="CreateWindow0()" type="image" src="/empleo/imagenes/estadisticas.gif"
+				value="Estadísticas" name="estadisticas"> * <INPUT id="Image2" onclick="CreateWindow2()" type="image" src="/empleo/imagenes/faq.gif"
+				value="Respuesta a Preguntas Frecuentes" name="ayuda"> * <INPUT id="Image3" onclick="CreateWindow4()" type="image" src="/empleo/imagenes/hdv.gif"
+				value="Ejemplo Hoja de Vida" name="formato"> * <INPUT id="Image4" onclick="CreateWindow5()" type="image" src="/empleo/imagenes/ofertas.gif"
+				value="OfertasVigentes" name="ofertas">
+		</P>
+		<P align="center"><EM>“La Bolsa de Empleo, busca convertirse en fuente especializada, 
+				seria y confiable, donde los encargados de Gerencia del Talento Humano pueden 
+				encontrar fácilmente una amplia gama de perfiles de profesionales Javerianos, 
+				para satisfacer las necesidades de Recurso Humano en sus empresas”.</EM>&nbsp;</P>
+</asp:Content>

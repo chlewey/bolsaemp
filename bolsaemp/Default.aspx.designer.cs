@@ -16,5 +16,15 @@ namespace bolsaemp {
 		protected System.Web.UI.WebControls.Content Content1;
 		
 		protected System.Web.UI.WebControls.Button button1;
+		
+		protected System.Web.UI.WebControls.Button submit;
+		
+		protected System.Web.UI.WebControls.LinkButton image1;
+		
+		protected System.Web.UI.WebControls.LinkButton image2;
+		
+		protected System.Web.UI.WebControls.LinkButton image3;
+		
+		protected System.Web.UI.WebControls.LinkButton image4;
 	}
 }
