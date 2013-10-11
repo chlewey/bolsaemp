@@ -2,13 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="bolsaemp/Default.aspx">
     <Files>
-      <File FileName="bolsaemp/Default.aspx" Line="5" Column="1" />
-      <File FileName="bolsaemp/javeriana.master" Line="7" Column="16" />
-      <File FileName="bolsaemp/inc/Banner.ascx" Line="1" Column="45" />
-      <File FileName="bolsaemp/inc/Footer.ascx" Line="1" Column="45" />
-      <File FileName="bolsaemp/inc/MenuBar.ascx" Line="1" Column="45" />
-      <File FileName="bolsaemp/inc/Search.ascx" Line="1" Column="45" />
-      <File FileName="bolsaemp/inc/SideMenu.ascx" Line="1" Column="45" />
+      <File FileName="bolsaemp/Default.aspx" Line="5" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
