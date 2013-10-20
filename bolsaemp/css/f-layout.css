@@ -1,0 +1,44 @@
+body{}
+#wrapper{margin:1ex auto;width:1070px;padding:5px}
+	#header{position:relative;height:245px}
+		#sitenotice{float:left}
+			#sitename{width:360px;height:120px;margin:0}
+			#sitemotto{width:360px;height:20px;margin:0}
+		#section{}
+			#section-upper{position:absolute;margin:0;bottom:105px;left:365px;right:0}
+			#section-lower{position:absolute;margin:0;top:145px;height:100px;left:0;right:0}
+	#body{position:relative;padding-top:5px}
+		#main{}
+			#content{padding:1ex}
+		#top_area{position:absolute;left:365px;right:0;top:-245px;height:140px}
+		#left_area{width:225px}
+		#right_area{width:200px}
+	#body:after{display:block;content:' ';height:0;clear:both}
+	#footer:before{clear:both}
+	#footer{position:relative}
+/*
+ *  3 column layout
+ */
+/*
+	.col-3 #body{clear:both;float:left;width:100%;overflow:hidden;margin-bottom:1ex}
+		.col-3 #main{position:relative;float:left;width:100%;right:25%}
+			.col-3 #columns{position:relative;float:left;width:100%;right:50%}
+				.col-3 #content{position:relative;float:left;width:46%;left:102%}
+				.col-3 #left_area{position:relative;float:left;width:225px;left:31%}
+				.col-3 #right_area{position:relative;float:left;width:21%;left:85%}
+*/
+	.col-3 #body{}
+		.col-3 #main{float:right;margin-left:-225px;width:100%}
+			.col-3 #content{margin-left:230px;margin-right:205px}
+		.col-3 #left_area{float:left}
+		.col-3 #right_area{position:absolute;top:5px;right:0;bottom:0;overflow:hidden}
+
+	.col-2l #body{}
+		.col-2l #main{float:right;margin-left:-225px;width:100%}
+			.col-2l #content{margin-left:230px}
+		.col-2l #left_area{float:left}
+
+	.col-2r #body{}
+		.col-2r #main{float:left;margin-right:-200px;width:100%}
+			.col-2r #content{margin-right:205px}
+		.col-2r #right_area{float:right}

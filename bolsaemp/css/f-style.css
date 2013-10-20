@@ -1,0 +1,42 @@
+/*
+ * Estilos generales
+ */
+body{font-family:Trebuchet,Helv,Helvetica,Arial,sans-serif;font-size:11pt;font-style:normal;font-weight:normal;color:#1b1b1b;background:#e6eaef}
+:link,:visited{color:#053a61;text-decoration:none}
+:link:hover,:visited:hover{color:#004890;text-decoration:underline}
+h1,h2,h3{font-family:Verdana,Helv,Helvetica,Arial,sans-serif;font-weight:bold}
+h4,h5,h6{font-weight:bold}
+h1{font-size:1.75em;margin:0 0 1ex}
+h2{font-size:1.35em;margin:2ex 0 1ex}
+h3{font-size:1.15em}
+h4{font-size:1.00em}
+h5{font-size:0.90em}
+h6{font-size:0.80em}
+a.area{display:block;width:100%;height:100%}
+a.area:hover{text-decoration:none}
+
+input,input[type=text],input[type=password],.text_style{border:thin inset #096fa2;padding:2px 1px}
+input[type=submit],input[type=reset],input[type=botton],.botton{border-style:outset;background-color:#e0e9f3}
+
+
+
+/*
+ * Estilos de la plantilla general
+ */
+#wrapper{border:thin outset #096fa2;background-color:#e0e9f3}
+	#header{}
+		#sitenotice{}
+			#sitename{font-size:0;text-indent:-999em;background:transparent url('../media/logo-h-360.png') no-repeat 50% 50%}
+			#sitemotto{text-transform:uppercase;font-size:9pt;font-weight:bold;text-align:center;background-color:#053a61}
+			#sitemotto a.area{color:#fff}
+		#section{}
+			#section-upper{text-align:right}
+			#section-lower{text-align:right;padding-left:365px;background:#ccc}
+	#body{}
+		#content{border:thin inset #096fa2;background-color:#fff}
+		#top_area{background-color:rgba(0,72,144,.4)}
+			.MenuBarHorizontal{display:none}
+		#left_area{}
+		#right_area{}
+	#footer{text-align:center}
+		#footer:before{display:block;margin:1ex 10%;border:thin inset #096fa2;content:'';opacity:.6}

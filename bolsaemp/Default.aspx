@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/javeriana.master" Inherits="bolsaemp.Default" Title="Bolsa de Empleo" %>
+<%@ Page Language="C#" MasterPageFile="~/Fing.master" Inherits="bolsaemp.Default" Title="Bolsa de Empleo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
   <h1>Bolsa de Empleo</h1>
   <div class="panel">
