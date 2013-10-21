@@ -20,8 +20,8 @@ body{font-family:Helv,Helvetica,Arial,sans-serif;font-size:11pt;font-style:norma
 :link:hover,:visited:hover{color:#09f;text-decoration:underline}
 h1,h2,h3{font-family:Verdana,Helv,Helvetica,Arial,sans-serif;font-weight:bold}
 h4,h5,h6{font-weight:bold}
-h1{font-size:1.75em;margin:0 0 1ex}
-h2{font-size:1.35em;margin:2ex 0 1ex}
+h1{font-size:1.75em}
+h2{font-size:1.35em}
 h3{font-size:1.15em}
 h4{font-size:1.00em}
 h5{font-size:0.90em}
@@ -48,13 +48,28 @@ select{border-style:thin outset #05a;padding:2px 1px;background-color:#dee}
 		#internal{font-size:.7em}
 	#body{}
 		#main{}
-			#content{}
+			#content{font-size:12pt}
 		#top_area{}
 			#top-bar{background-color:#123;color:#eee}#top-bar a{color:#aaa}
 				#search{}
 				#TopMenu{}
+			#header_area{}
+				#MenuBar{background:white}
+					#MenuBar ul{border:thin outset #05a}
+			#banner_area{}
+				#banner{background-color:#555}
+					#banner a{text-align:center}
+						#banner img{}
+					#banner_texto{background-color:#abc}
+						#banner_title{font-size:13pt;color:white}
+						#banner .lang{}
 		#left_area{}
 		#right_area{}
 	#footer{text-align:center}
 		#footer:before{display:block;margin:1ex 10%;border:thin inset #096fa2;content:'';opacity:.6}
-/*-*/
+
+/*
+ * In #Content
+ */
+#content h1,#content p{margin:0 0 1ex}
+#content h2,#content h3,#content h4,#content h5,#content h6{margin:1em 0 1ex}
