@@ -25,45 +25,53 @@ body{}
 /*-common-*/.clearafter:after{display:block;content:' ';height:0;clear:both}
 /*-common-*/ul{list-style-type:none}
 /*-common-*/ul li{display:block}
-#wrapper{z-index:1;margin:55px auto 5px;width:1080px;background:rgba(200,100,0,.3)}
-	#header{position:relative;height:140px;background:rgba(0,200,100,.3)}
-	.big-header #header{height:300px}
+#wrapper{position:relative;z-index:0;margin:45px auto 5px;width:1080px}
+	#header{position:relative;height:140px}
+	.big-header #header{height:290px}
 		#sitenotice{float:left}
 			#sitename{display:block;width:360px;height:120px;margin:0}
 			#sitemotto{display:block;width:360px;height:20px;margin:0}
 			#sitenotice br{display:none}
-		#section{z-index:9999}
-			#section-upper{position:absolute;margin:0;bottom:105px;left:365px;right:0}
-			#section-lower{position:absolute;margin:0;top:145px;height:100px;left:0;right:0}
-	#body{position:relative;padding-top:5px;background:rgba(0,100,200,.3)}
+		#section{position:absolute;top:0;height:50px;left:360px;right:0}
+			#section-upper{}
+			#section-lower{}
+	#body{position:relative;padding-top:5px}
 		#main{}
 			#content{padding:1ex}
 		#top_area{}
-			#top-bar{position:fixed;top:5px;left:0;right:0;height:50px;background:rgba(0,0,0,.3)}
-				#search{float:right;bakcground:red}
-			#header_area{position:absolute;z-index:1;top:-140px;height:140px;left:360px;right:0;background:rgba(250,250,250,.3)}
-			.big-header #header_area{top:-300px}
-			#banner_area{position:absolute;top:-160px;height:160px;left:0;right:0;background:rgba(150,150,150,.3)}
+			#top-bar{position:fixed;z-index:9999;top:0;left:0;right:0;height:40px}
+				#search{float:right}
+			#header_area{position:absolute;z-index:1;top:-90px;height:90px;left:360px;right:0}
+			.big-header #header_area{top:-240px}
+			#banner_area{display:none}
+			.big-header #banner_area{display:block;position:absolute;top:-150px;height:150px;left:0;right:0}
+				#banner{z-index:1}
+					#banner a{z-index:1}
+						#banner img{z-index:1}
+				#banner_texto{position:absolute;bottom:0;height:25px;left:0;right:0}
+					#banner_title{float:left}
+					#banner_texto .lang{float:right}
 		#left_area{width:250px}
 		#right_area{width:210px}
 	#body:after{display:block;content:' ';height:0;clear:both}
 	#footer:before{clear:both}
-	#footer{position:relative;background:rgba(100,0,200,.3)}
+	#footer{position:relative}
 /*-menu-*/	.MenuBarHorizontal{}
-/*-menu-*/	.MenuBarHorizontal li{position:relative;float:left;padding:5px}
-/*-menu-*/	.MenuBarHorizontal ul{display:none}
-/*-menu-*/	.MenuBarHorizontal li:hover>ul{position:absolute;display:block}
+/*-menu-*/	.MenuBarHorizontal li{position:relative;float:left}
+/*-menu-*/	.MenuBarHorizontal li a{display:block;padding:5px}
+/*-menu-*/	.MenuBarHorizontal li a.MenuBarHorizontal:after{content:"\0000a0\0025be";display:block;float:right}
+/*-menu-*/	.MenuBarHorizontal li:hover a.MenuBarHorizontal:after{content:"\0000a0\0025b4"}
+/*-menu-*/	.MenuBarHorizontal li li a.MenuBarItemSubmenu:after{content:"\0000a0\0025b8"}
+/*-menu-*/	.MenuBarHorizontal li li:hover a.MenuBarItemSubmenu:after{content:"\0000a0\0025c2"}
+/*-menu-*/	.MenuBarHorizontal ul{position:absolute;left:-999em;width:auto}
+/*-menu-*/	.MenuBarHorizontal ul li{float:none}
+/*-menu-*/	.MenuBarHorizontal ul li a{padding:2px;width:116px}
+/*-menu-*/	.MenuBarHorizontal ul li a.anchoPos{width:250px}
+/*-menu-*/	.MenuBarHorizontal li:hover>ul{left:10px}
+/*-menu-*/	.MenuBarHorizontal li li:hover>ul{left:120px;top:3px}
 /*
  *  3 column layout
  */
-/*
-	.col-3 #body{clear:both;float:left;width:100%;overflow:hidden;margin-bottom:1ex}
-		.col-3 #main{position:relative;float:left;width:100%;right:25%}
-			.col-3 #columns{position:relative;float:left;width:100%;right:50%}
-				.col-3 #content{position:relative;float:left;width:46%;left:102%}
-				.col-3 #left_area{position:relative;float:left;width:225px;left:31%}
-				.col-3 #right_area{position:relative;float:left;width:21%;left:85%}
-*/
 	.col-3 #body{}
 		.col-3 #main{float:right;margin-left:-250px;width:100%}
 			.col-3 #content{margin-left:260px;margin-right:220px}
