@@ -12,29 +12,34 @@ public partial class Fing : System.Web.UI.MasterPage
 	public static bool display_top { get; set; }
 	public static bool display_left { get; set; }
 	public static bool display_right { get; set; }
+	public static bool big_header { get; set; }
 	public static string docclass {
 		get
 		{
+			string s = "";
+			if(Fing.big_header) {
+				s = " big-header";
+			}
 			if(Fing.display_left)
 			{
 				if(Fing.display_right)
 				{
-					return "col-3";
+					return "col-3" + s;
 				}
 				else
 				{
-					return "col-2l";
+					return "col-2l" + s;
 				}
 			}
 			else
 			{
 				if(Fing.display_right)
 				{
-					return "col-2r";
+					return "col-2r" + s;
 				}
 				else
 				{
-					return "col-1";
+					return "col-1" + s;
 				}
 			}
 		}

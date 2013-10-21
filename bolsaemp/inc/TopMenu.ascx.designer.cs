@@ -11,14 +11,6 @@
 namespace bolsaemp {
 	
 	
-	public partial class TopArea {
-		
-		protected bolsaemp.Search Search;
-		
-		protected bolsaemp.TopMenu TopMenu;
-		
-		protected bolsaemp.MenuBar MenuBar;
-		
-		protected bolsaemp.Banner Banner;
+	public partial class TopMenu {
 	}
 }

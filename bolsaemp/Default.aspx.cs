@@ -12,6 +12,7 @@ namespace bolsaemp
 				Fing.display_top = true;
 				Fing.display_left = true;
 				Fing.display_right = true;
+				Fing.big_header = true;
 			}
 	
 		public virtual void button1Clicked (object sender, EventArgs args)

@@ -55,6 +55,7 @@
     <Content Include="inc\TopArea.ascx" />
     <Content Include="inc\LeftArea.ascx" />
     <Content Include="inc\RightArea.ascx" />
+    <Content Include="inc\TopMenu.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -137,6 +138,12 @@
     </Compile>
     <Compile Include="inc\RightArea.ascx.designer.cs">
       <DependentUpon>RightArea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inc\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inc\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
