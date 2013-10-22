@@ -1,9 +1,9 @@
 <%@ Control Language="C#" Inherits="bolsaemp.TopMenu" %>
-<ul id="TopMenu" class="MenuBarHorizontal">
-	<li><asp:HyperLink NavigateUrl="/ing/" Text="Pontificia Universidad Javeriana" runat="server"/></li>
-	<li><asp:HyperLink NavigateUrl="/ing/" Text="Facultad de Ingeniería" runat="server"/></li>
+<ul id="TopMenu" class="menubar">
+	<li><asp:HyperLink NavigateUrl="/ing/" Text="Universidad" runat="server"/></li>
+	<li><asp:HyperLink NavigateUrl="/ing/" Text="Facultad" runat="server"/></li>
 	<li>
-		<asp:HyperLink NavigateUrl="/crea/" Text="Egresados" runat="server" class="MenuBarHorizontal MenuBarItemSubmenu" />
+		<asp:HyperLink NavigateUrl="/crea/" Text="Egresados" runat="server" class="submenu-1" />
 		<ul>
 			<li><asp:HyperLink NavigateUrl="/crea/eventos.aspx" Text="Eventos" runat="server"/></li>
 			<li><asp:HyperLink NavigateUrl="/crea/noticias.aspx" Text="Noticias" runat="server"/></li>

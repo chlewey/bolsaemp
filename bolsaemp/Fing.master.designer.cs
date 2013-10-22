@@ -12,17 +12,17 @@
 
 public partial class Fing {
 	
-	protected bolsaemp.pagehead head;
+	protected System.Web.UI.UserControl head;
 	
-	protected bolsaemp.Header Header;
+	protected System.Web.UI.UserControl Header;
 	
 	protected System.Web.UI.WebControls.ContentPlaceHolder Main;
 	
-	protected bolsaemp.TopArea TopArea;
+	protected System.Web.UI.UserControl TopArea;
 	
-	protected bolsaemp.LeftArea LeftArea;
+	protected System.Web.UI.UserControl LeftArea;
 	
-	protected bolsaemp.RightArea RightArea;
+	protected System.Web.UI.UserControl RightArea;
 	
 	protected bolsaemp.Footer Footer;
 }
